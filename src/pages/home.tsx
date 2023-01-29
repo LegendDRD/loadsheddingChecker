@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("https://api.stitch-sa.co.za/v1/user/testv2")
+      .get("http://api.stitch-sa.co.za/v1/user/testv2")
       .then((response: any) => {
         setIsOnline(response.data.message);
       })
