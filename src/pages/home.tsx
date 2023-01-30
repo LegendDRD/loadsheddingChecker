@@ -25,14 +25,15 @@ export default function Home() {
         </div>
       ) : (
         <>
-          {" "}
           {isonline === false ? (
             <div className="offdiv">
               <h1>Offline</h1>
             </div>
           ) : (
-            <h1>Loading</h1>
-          )}{" "}
+            <div className="onbody">
+              <h1>Loading</h1>
+            </div>
+          )}
         </>
       )}
     </>
